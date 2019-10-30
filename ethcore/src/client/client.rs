@@ -444,7 +444,7 @@ impl Importer {
 			is_epoch_begin,
 		);
 
-		warn!("Client; check and lock for block {}, enacting finished with result {}", header.hash(), enact_result);
+		warn!("Client; check and lock for block {}, enacting finished", header.hash());
 
 		let mut locked_block = match enact_result {
 			Ok(b) => b,
